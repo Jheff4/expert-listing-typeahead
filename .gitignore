@@ -1,0 +1,8 @@
+node_modules
+.next
+.DS_Store
+*.log
+CLAUDE.md
+AGENTS.md
+CONTEXT.md
+WRITEUP.md
