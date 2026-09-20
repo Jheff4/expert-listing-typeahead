@@ -22,7 +22,7 @@ export default function LocationTypeahead({
   label = "Search a location in Nigeria",
   labelClassName = "text-ink-700",
   selectedTextClassName = "text-brand-700",
-  placeholder = "Try a neighbourhood, an address, or a postal code",
+  placeholder = "Location, address, or postcode",
   onSelect,
 }: LocationTypeaheadProps) {
   const [query, setQuery] = useState("");
@@ -174,7 +174,7 @@ export default function LocationTypeahead({
           }}
           onFocus={() => results.length > 0 && setIsOpen(true)}
           onKeyDown={handleKeyDown}
-          className="w-full rounded-lg border border-ink-100 bg-white px-4 py-3 text-ink-900 shadow-sm outline-none transition focus:border-brand-500 focus:ring-2 focus:ring-brand-200"
+          className="w-full truncate rounded-lg border border-ink-100 bg-white px-4 py-3 text-ink-900 shadow-sm outline-none transition focus:border-brand-500 focus:ring-2 focus:ring-brand-200"
         />
 
         {status === "loading" && (

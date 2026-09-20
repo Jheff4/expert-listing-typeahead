@@ -10,7 +10,7 @@ export default function HomePage() {
           <Logo className="text-brand-400 mt-1" />
           <Link
             href="/docs"
-            className="group inline-flex items-center gap-1.5 text-sm font-medium text-brand-400 transition-colors hover:text-brand-300"
+            className="group hidden items-center gap-1.5 text-sm font-medium text-brand-400 transition-colors hover:text-brand-300 sm:inline-flex"
           >
             Documentation
             <span
@@ -82,7 +82,16 @@ export default function HomePage() {
               <Field label="Beds & Baths" value="Beds / Baths" />
               <Field label="Price" value="Price Range" />
 
-              <div>
+              {/* Hidden below sm rather than kept and restyled: it's a
+                  disabled, decorative button (this task only wires up
+                  Location), and once the grid stacks to one column on
+                  mobile it has no input to sit flush beside, so it just
+                  floats as an orphaned circle under Price. The typeahead
+                  already searches as you type, so there's nothing for an
+                  explicit search action to do on any breakpoint; dropping
+                  it on mobile removes dead chrome instead of dressing it
+                  up. */}
+              <div className="hidden sm:block">
                 <span
                   className="invisible mb-2 block text-sm font-medium"
                   aria-hidden="true"
