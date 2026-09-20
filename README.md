@@ -30,4 +30,3 @@ npm run test
   fix explained, scaling notes, testing strategy)
 - `__tests__/LocationTypeahead.test.tsx` - test suite, including a test for
   the out-of-order response race condition
-- `WRITEUP.md` - the application's required 150-300 word write-up
