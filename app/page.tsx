@@ -10,7 +10,7 @@ export default function HomePage() {
           <Logo className="text-brand-400 mt-1" />
           <Link
             href="/docs"
-            className="group hidden items-center gap-1.5 text-sm font-medium text-brand-400 transition-colors hover:text-brand-300 sm:inline-flex"
+            className="group inline-flex items-center gap-1.5 text-sm font-medium text-brand-400 transition-colors hover:text-brand-300"
           >
             Documentation
             <span
