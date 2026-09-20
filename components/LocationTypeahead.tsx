@@ -22,7 +22,7 @@ export default function LocationTypeahead({
   label = "Search a location in Nigeria",
   labelClassName = "text-ink-700",
   selectedTextClassName = "text-brand-700",
-  placeholder = "Try “Lekki” or “Ikeja”",
+  placeholder = "Try a neighbourhood, an address, or a postal code",
   onSelect,
 }: LocationTypeaheadProps) {
   const [query, setQuery] = useState("");

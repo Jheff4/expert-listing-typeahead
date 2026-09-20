@@ -76,7 +76,6 @@ export default function HomePage() {
                 label="Location"
                 labelClassName="text-white/80"
                 selectedTextClassName="text-brand-300"
-                placeholder="Try “Lekki” or “Ikeja”"
               />
 
               <Field label="Property Type" value="Any" />
